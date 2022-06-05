@@ -204,7 +204,7 @@ async def nftbsta(client: Client, message: Message):
 @Client.on_message(commandpro(["مين", f"meen@{BOT_USERNAME}"]) & other_filters)
 async def meen(client: Client, message: Message):
     await message.reply(
-        f"""انا بوت وبحبكك(""")
+        f"""انا بوت وبحبك 🥺❤️""")
 
     
 @Client.on_message(command(["😹😹", f"dehka@{BOT_USERNAME}"]) & other_filters)
