@@ -115,7 +115,7 @@ async def pause(client, m: Message):
         try:
             await call_py.pause_stream(chat_id)
             await m.reply(
-                "⏸ **تم ايقاف المسار موقتآ**\n\n• **لٲستئناف البث استخدم**\n» /resume الامر."
+                "⏸ **تم ايقاف المسار موقتآ**\n\n• **لٲستئناف البث استخدم**\n» `استئناف` الامر."
             )
         except Exception as e:
             await m.reply(f"🚫 **خطاء:**\n\n`{e}`")
@@ -133,7 +133,7 @@ async def resume(client, m: Message):
         try:
             await call_py.resume_stream(chat_id)
             await m.reply(
-                "▶️ **تم استئناف المسار**\n\n• **لايقاف البث موقتآ استخدم**\n» /pause الامر"
+                "▶️ **تم استئناف المسار**\n\n• **لايقاف البث موقتآ استخدم**\n» `وقف` الامر"
             )
         except Exception as e:
             await m.reply(f"🚫 **خطاء:**\n\n`{e}`")
@@ -151,7 +151,7 @@ async def mute(client, m: Message):
         try:
             await call_py.mute_stream(chat_id)
             await m.reply(
-                "🔇 **تم كتم الصوت**\n\n• **لرفع الكتم استخدم**\n» /unmute الامر"
+                "🔇 **تم كتم الصوت**\n\n• **لرفع الكتم استخدم**\n» `الغاء الكتم` الامر"
             )
         except Exception as e:
             await m.reply(f"🚫 **خطاء:**\n\n`{e}`")
@@ -169,7 +169,7 @@ async def unmute(client, m: Message):
         try:
             await call_py.unmute_stream(chat_id)
             await m.reply(
-                "🔊 **تم رفع الكتم**\n\n• **لكتم الصوت استخدم**\n» /mute الامر"
+                "🔊 **تم رفع الكتم**\n\n• **لكتم الصوت استخدم**\n» `ميوت` الامر"
             )
         except Exception as e:
             await m.reply(f"🚫 **خطاء:**\n\n`{e}`")
