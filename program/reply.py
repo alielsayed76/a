@@ -201,3 +201,7 @@ async def nftbsta(client: Client, message: Message):
         f"""فرح خالتك قريب 😹❤️""")
     
     
+@Client.on_message(commandpro(["مين", f"nftbsta@{BOT_USERNAME}"]) & other_filters)
+async def nftbsta(client: Client, message: Message):
+    await message.reply(
+        f"""انا بوت وبحبكك(""")
