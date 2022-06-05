@@ -1,6 +1,4 @@
-# Copyright (C) 2021 By Amort Music-Project
-# Commit Start Date 20/10/2021
-# Finished On 28/10/2021
+
 
 import re
 import asyncio
@@ -50,7 +48,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(command(["mplay","شغيل","شغيل اغنيه","play", "غل اغنية", f"mplay@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["mplay","تشغيل","تشغيل اغنيه","play", "شغل" , "شغل اغنية", f"mplay@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -269,7 +267,7 @@ async def play(c: Client, m: Message):
 # stream is used for live streaming only
     
     
-@Client.on_message(command(["stream","play","شغيل", f"stream@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["stream","play", "شغل" , "تشغيل", f"stream@{BOT_USERNAME}"]) & other_filters)
 async def stream(c: Client, m: Message):
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
