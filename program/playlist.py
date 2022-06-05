@@ -1,6 +1,3 @@
-# Copyright (C) 2021 By Amort Music-Project
-# Commit Start Date 20/10/2021
-# Finished On 28/10/2021
 
 from config import BOT_USERNAME
 from pyrogram.types import (
@@ -19,7 +16,7 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@Client.on_message(command(["playlist","حكم", f"playlist@{BOT_USERNAME}", "queue", f"queue@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["playlist","تحكم", f"playlist@{BOT_USERNAME}", "queue", f"queue@{BOT_USERNAME}"]) & other_filters)
 async def playlist(client, m: Message):
    chat_id = m.chat.id
    if chat_id in QUEUE:
