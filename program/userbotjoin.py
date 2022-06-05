@@ -63,7 +63,8 @@ async def leave_one(client, message):
 async def leave_all(client, message):
     if message.from_user.id not in SUDO_USERS:
         return
-    elif:
+    
+    
     left = 0
     failed = 0
     lol = await message.reply("🔄 **userbot** leaving all chats !")
