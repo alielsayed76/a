@@ -13,6 +13,6 @@ def command(commands: Union[str, List[str]]):
     return filters.command(commands, COMMAND_PREFIXES)
 
 def commandpro(commands: Union[str, List[str]], prefixes: Union[str, List[str]] = "ح ع ر ب م",  case_sensitive: bool = False):
-    return filters.command(commands, "ح" , "ع", "ر", "ب", "م")
+    return filters.command(commands, "ح ع ر ب م")
 
 
