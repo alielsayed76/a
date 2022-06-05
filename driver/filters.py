@@ -11,3 +11,6 @@ other_filters2 = (
 
 def command(commands: Union[str, List[str]]):
     return filters.command(commands, COMMAND_PREFIXES)
+
+def commandpro(commands: Union[str, List[str]]):
+    return filters1.command(commands, "")
