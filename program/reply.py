@@ -123,19 +123,19 @@ async def motawerf(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["تبتي", f"motaweryj@{BOT_USERNAME}"]) & filters.user(5369052737))
+@Client.on_message(commandpro(["تبتي", f"motaweryj@{BOT_USERNAME}"]) & filters.user(5369052737))
 async def motaweryj(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚🙈""")
 
 
-@Client.on_message(command(["تبتي", f"motawer@{BOT_USERNAME}"]) & filters.user(5002164804))
+@Client.on_message(commandpro(["تبتي", f"motawer@{BOT_USERNAME}"]) & filters.user(5002164804))
 async def motawer(client: Client, message: Message):
     await message.reply(
         f"""مبرمج السورس حبيب قلبي 🌚💋""")
 
 
-@Client.on_message(command(["وت", f"gghhpbhab@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["وت", f"gghhpbhab@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def gghpbhab(client: Client, message: Message):
     await message.reply_text(
         f"""اسمي {BOT_NAME} يروحي 🌚❤️""", 
@@ -153,7 +153,7 @@ async def gghpbhab(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command(["لي", f"motaweraw@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["لي", f"motaweraw@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def motaweraw(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/f7a8e5469df132cf1d5c1.jpg",
@@ -171,7 +171,7 @@ async def motaweraw(client: Client, message: Message):
     ))
                 
                 
-@Client.on_message(filters.command(["سن", f"motawerat@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["سن", f"motawerat@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def motawerat(client: Client, message: Message):
     await message.reply_photo(
         photo = "https://telegra.ph/file/7dd0f2755c4bb2ed05b15.jpg",
