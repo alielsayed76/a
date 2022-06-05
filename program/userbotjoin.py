@@ -8,7 +8,7 @@ from pyrogram.errors import UserAlreadyParticipant
 
 
 @Client.on_message(
-    command(["userbotjoin","لمساعد","انضم","نضم", f"userbotjoin@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
+    command(["userbotjoin","المساعد","انضم","نضم", f"userbotjoin@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
 )
 @authorized_users_only
 @errors
@@ -43,7 +43,7 @@ async def join_group(client, message):
     )
 
 
-@Client.on_message(command(["userbotleave","غادرة",
+@Client.on_message(command(["userbotleave","مغادرة",
                             f"leave@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def leave_one(client, message):
@@ -58,12 +58,12 @@ async def leave_one(client, message):
         return
 
 
-@Client.on_message(command(["leaveall","ادرالجميع", f"leaveall@{BOT_USERNAME}"]))
+@Client.on_message(command(["leaveall","غادرالجميع", f"leaveall@{BOT_USERNAME}"]))
 @sudo_users_only
 async def leave_all(client, message):
     if message.from_user.id not in SUDO_USERS:
         return
-
+    elif:
     left = 0
     failed = 0
     lol = await message.reply("🔄 **userbot** leaving all chats !")
