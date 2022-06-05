@@ -13,4 +13,6 @@ def command(commands: Union[str, List[str]]):
     return filters.command(commands, COMMAND_PREFIXES)
 
 def commandpro(commands: Union[str, List[str]]):
-    return filters.command(commands, "")
+    return filters2.command(commands, "ح" , "ع", "ر", "ب", "م")
+
+
