@@ -87,7 +87,7 @@ def song(_, message):
 
 
 @Client.on_message(
-    command(["vsong", "نزيل","حميل فديو","نزيل فديو", f"vsong@{BOT_USERNAME}", "video", f"video@{BOT_USERNAME}"]) & ~filters.edited
+    command(["vsong", "تنزيل","تحميل فديو","تنزيل فديو", f"vsong@{BOT_USERNAME}", "video", f"video@{BOT_USERNAME}"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
@@ -135,11 +135,11 @@ async def vsong(client, message):
         print(e)
 
 
-@Client.on_message(command(["lyric","لمات",  f"lyric@{BOT_USERNAME}"]))
+@Client.on_message(command(["lyric","كلمات",  f"lyric@{BOT_USERNAME}"]))
 async def lyrics(_, message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("» **قسم باارسال اسم المقطع**")
+            await message.reply_text("» **قم باارسال اسم المقطع**")
             return
         query = message.text.split(None, 1)[1]
         rep = await message.reply_text("🔎 **جاري البحث عن كلمات...**")
