@@ -9,7 +9,7 @@ other_filters2 = (
 
 
 def command(commands: Union[str, List[str]]):
-    return filters.command(commands,"")
+    return filters.command(commands,None)
 
 
 def commandpro(commands: Union[str, List[str]]):
