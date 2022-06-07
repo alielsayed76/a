@@ -8,7 +8,7 @@ from driver.decorators import sudo_users_only, errors
 downloads = os.path.realpath("program/downloads")
 raw = os.path.realpath(".")
 
-@Client.on_message(command(["rmd","تنظيف", "clear"]) & ~filters.edited)
+@Client.on_message(command(["/rmd","تنظيف", "/clear"]) & ~filters.edited)
 @errors
 @sudo_users_only
 async def clear_downloads(_, message: Message):
@@ -21,7 +21,7 @@ async def clear_downloads(_, message: Message):
         await message.reply_text("❌ **no files downloaded**")
 
         
-@Client.on_message(command(["rmw", "مسح", "clean"]) & ~filters.edited)
+@Client.on_message(command(["/rmw", "مسح", "/clean"]) & ~filters.edited)
 @errors
 @sudo_users_only
 async def clear_raw(_, message: Message):
