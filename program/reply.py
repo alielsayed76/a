@@ -71,9 +71,11 @@ async def vgdg(client: Client, message: Message):
 
 @Client.on_message(command(["رجلي", f"nftbs@{BOT_USERNAME}"]) & other_filters)
 async def nftbs(client: Client, message: Message):
-    await message.reply(
-        f"""تتشل يبعيد 😹😹
-        """)
+    if (m.command) < 2:
+        await message.reply("""تتشل يبعيد """)
+        return
+    else:
+        return
 
     
 @Client.on_message(command(["انا مين", f"gghpb@{BOT_USERNAME}"]) & other_filters)
