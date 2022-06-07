@@ -24,7 +24,7 @@ bcl = InlineKeyboardMarkup(
 )
 
 
-@Client.on_message(command(["reload", "تحديث", f"reload@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["/reload", "تحديث", f"reload@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
 async def update_admin(client, message):
     global admins
@@ -37,7 +37,7 @@ async def update_admin(client, message):
         "✅تم إعادة تحميل البوت ** بشكل صحيح! **  \n✅ ** تم تحديث قائمة المسؤولين ** **! ** ")
 
 
-@Client.on_message(command(["skip", "تخطي", f"skip@{BOT_USERNAME}", "vskip"]) & other_filters)
+@Client.on_message(command(["/skip", "تخطي", f"skip@{BOT_USERNAME}", "vskip"]) & other_filters)
 @authorized_users_only
 async def skip(client, m: Message):
 
@@ -88,7 +88,7 @@ async def skip(client, m: Message):
 
 
 @Client.on_message(
-    command(["stop", "انهاء", "ايقاف", f"stop@{BOT_USERNAME}", "end", f"end@{BOT_USERNAME}", "vstop"])
+    command(["/stop", "انهاء", "ايقاف", f"stop@{BOT_USERNAME}", "end", f"end@{BOT_USERNAME}", "vstop"])
     & other_filters
 )
 @authorized_users_only
@@ -106,7 +106,7 @@ async def stop(client, m: Message):
 
 
 @Client.on_message(
-    command(["pause", "وقف", f"pause@{BOT_USERNAME}", "vpause"]) & other_filters
+    command(["/pause", "وقف", f"pause@{BOT_USERNAME}", "vpause"]) & other_filters
 )
 @authorized_users_only
 async def pause(client, m: Message):
@@ -124,7 +124,7 @@ async def pause(client, m: Message):
 
 
 @Client.on_message(
-    command(["resume", "استئناف", f"resume@{BOT_USERNAME}", "vresume"]) & other_filters
+    command(["/resume", "استئناف", f"resume@{BOT_USERNAME}", "vresume"]) & other_filters
 )
 @authorized_users_only
 async def resume(client, m: Message):
@@ -142,7 +142,7 @@ async def resume(client, m: Message):
 
 
 @Client.on_message(
-    command(["mute", "ميوت" , f"mute@{BOT_USERNAME}", "vmute"]) & other_filters
+    command(["/mute", "ميوت" , f"mute@{BOT_USERNAME}", "vmute"]) & other_filters
 )
 @authorized_users_only
 async def mute(client, m: Message):
@@ -160,7 +160,7 @@ async def mute(client, m: Message):
 
 
 @Client.on_message(
-    command(["unmute", "الغاء الكتم", f"unmute@{BOT_USERNAME}", "vunmute"]) & other_filters
+    command(["/unmute", "الغاء الكتم", f"unmute@{BOT_USERNAME}", "vunmute"]) & other_filters
 )
 @authorized_users_only
 async def unmute(client, m: Message):
