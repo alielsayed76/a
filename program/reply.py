@@ -9,6 +9,9 @@ from driver.filters import command, other_filters, commandpro
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
+
+m = message
+
 @Client.on_message(commandpro(["الإعدادات", "الاعدادات", "اعدادات", "مم", f"nftb@{BOT_USERNAME}"]) & other_filters)
 async def nftb(client: Client, message: Message):
     await message.reply(f"""🌀 ها هي اوامر الاغاني :
@@ -71,7 +74,7 @@ async def vgdg(client: Client, message: Message):
 
 @Client.on_message(command(["رجلي", f"nftbs@{BOT_USERNAME}"]) & other_filters)
 async def nftbs(client: Client, message: Message):
-    if (m.command) < 2:
+    if len(m.command) < 2:
         await message.reply("""تتشل يبعيد """)
         return
     else:
