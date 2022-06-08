@@ -218,3 +218,9 @@ async def ghour(client: Client, message: Message):
         f"""مش هغور غور انت 😒""")
 
 
+@Client.on_message(command(["غوري", f"ghoure@{BOT_USERNAME}"]) & other_filters3)
+async def ghoure(client: Client, message: Message):
+    await message.reply(
+        f"""مش هغور غور انت 😒""")
+
+
