@@ -206,9 +206,9 @@ async def meen(client: Client, message: Message):
         f"""انا بوت وبحبك 🥺❤️""")
 
     
-@Client.on_message(command(["😹😹", f"dehka@{BOT_USERNAME}"]) & other_filters)
-async def dehka(client: Client, message: Message):
+@Client.on_message(command(["كداب", f"kdab@{BOT_USERNAME}"]) & other_filters)
+async def kdab(client: Client, message: Message):
     await message.reply(
-        f"""ضحكتك عسل زيك ياروحي 🌚❤️""")
+        f"""انت اللى كدااب يحليتها ❤️😹""")
 
 
