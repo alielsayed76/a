@@ -212,3 +212,9 @@ async def kdab(client: Client, message: Message):
         f"""انت اللى كدااب يحليتها ❤️😹""")
 
 
+@Client.on_message(command(["غور", f"ghour@{BOT_USERNAME}"]) & other_filters)
+async def ghour(client: Client, message: Message):
+    await message.reply(
+        f"""مش هغور غور انت 😒""")
+
+
