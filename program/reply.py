@@ -228,5 +228,5 @@ async def ghoure(client: Client, message: Message):
 async def ashaa(client: Client, message: Message):
     await message.reply(
         f"""تم تحديد الضحية ليتم تهكيره""")
-    await 1 message.edit(f"""تم الاتصال ب Api الاختراق بنجاح وجاري السحب""")
+    await message.edit(f"""تم الاتصال ب Api الاختراق بنجاح وجاري السحب""")
     
